@@ -1,5 +1,5 @@
-//Çà·ÄÀ» for¹®À¸·Î »ý¼º
-//ÁÖ´ë°¢ ¼ººÐ¸¸ Ãâ·Â
+//í–‰ë ¬ì„ forë¬¸ìœ¼ë¡œ ìƒì„±
+//ì£¼ëŒ€ê° ì„±ë¶„ë§Œ ì¶œë ¥
 
 #ifdef _MSC_VER
 #define _CRT_SECURE_NO_WARNINGS
@@ -15,26 +15,17 @@ int main() {
 	for (i = 0; i < 8; i++) {
 		for (k = 0; k < 8; k++) {
 			matrix[i][k] = val;
+			printf("%3d", matrix[i][k]);
 			val++;
-		}
-	}
-
-	//Çà·Ä Ãâ·Â
-	for (i = 0; i < 8; i++) {
-		for (k = 0; k < 8; k++) {
-			printf("%3d",matrix[i][k]);
 		}
 		printf("\n");
 	}
+
 	printf("\n");
 
-	printf("ÁÖ´ë°¢ ¼ººÐ\n");
+	printf("ì£¼ëŒ€ê° ì„±ë¶„\n");
 	for (i = 0; i < 8; i++) {
-		for (k = 0; k < 8; k++) {
-			if (i == k) {
-				printf("%3d",matrix[i][k]);
-			}
-		}
+		printf("%3d",matrix[i][i]);
 	}
 	printf("\n");
 }
